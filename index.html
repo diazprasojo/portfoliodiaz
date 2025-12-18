@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio Diaz</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Cinzel:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+    <h2>PORTFOLIO</h2>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#projects">Project</a></li>
+        <li><a href="#contact">Kontak</a></li>
+    </ul>
+</nav>
+
+<section id="home" class="hero fade">
+    <img src="fotoprofile.jpg" class="profile-img">
+    <h1>Nama Anda</h1>
+    <p>Creative Designer | Mahasiswa Unpam</p>
+</section>
+
+<section id="about" class="about fade">
+    <h2>Tentang Saya</h2>
+    <p>
+        Saya adalah Mahasiswa Unpam yang memiliki minat besar dalam desain grafis
+        dan saya suka sesuatu yang bernuansa klasik. Terutama dalam hal otomotif
+        seperti mobil dan motor klasik. Dan saya ingin belajar dengan sungguh-sungguh
+        untuk menjadi seorang desainer grafis yang handal di masa depan.
+    </p>
+
+    <div class="biodata">
+        <p><strong>Nama:</strong> Diaz Prasojo</p>
+        <p><strong>Domisili:</strong> Indonesia</p>
+        <p><strong>Email:</strong> diazprasojoo@gmail.com</p>
+    </div>
+</section>
+
+<section id="projects" class="projects">
+    <h2>Project Pilihan</h2>
+
+    <div class="project-card fade">
+        <img src="webhitung.jpg">
+        <div class="project-info">
+            <h3>Website Menghitung Total Belanja</h3>
+            <p>
+                Aplikasi sederhana untuk menghitung total belanjaan
+                dengan antarmuka yang user-friendly dan desain yang simple
+            </p>
+        </div>
+    </div>
+
+    <div class="project-card fade">
+        <img src="webprofil.jpg">
+        <div class="project-info">
+            <h3>Website Profil</h3>
+            <p>
+                Website profil pribadi yang menampilkan informasi
+                tentang latar belakang, dan gambar motor dan mobil impian
+            </p>
+        </div>
+    </div>
+
+    <div class="project-card fade">
+        <img src="webumur.jpg">
+        <div class="project-info">
+            <h3>Website Menghitung Umur</h3>
+            <p>
+                Aplikasi sederhana untuk menghitung umur berdasarkan tanggal lahir
+                dengan antarmuka yang user-friendly dan desain yang simple
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact fade">
+    <h2>Kontak</h2>
+    <p>Email: diazprasojoo@gmail.com</p>
+    <p>Instagram: @diazprasojoo</p>
+    <p>WhatsApp: 085281134231</p>
+</section>
+
+<footer>
+    <p>© 2025 Portfolio Diaz</p>
+</footer>
+
+<script>
+    const fades = document.querySelectorAll('.fade');
+    window.addEventListener('scroll', () => {
+        fades.forEach(el => {
+            const top = el.getBoundingClientRect().top;
+            if (top < window.innerHeight - 100) {
+                el.classList.add('show');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
